@@ -1,11 +1,15 @@
 console.log ("Probando 1 2 3");
-//* Funcion de suma
+
+//* Funcion de suma en flecha
+const readInput =(id)=>Number(document.getElementById(id).value);
+
+
 
 function suma(){
-const inputNum1 = Number(document.getElementById("num1").value);
-const inputNum2 = Number(document.getElementById("num2").value);
+     readInput("num1") + readInput("num2");
+    
 const inputResult = document.getElementById("result");
-    document.getElementById("result").value = inputNum1+inputNum2;
+    document.getElementById("result").value = readInput("num1") + readInput("num2")
 
 } 
 
@@ -37,8 +41,5 @@ function multiplicacion(){
 
  //* Division arrow*
 //let suma = (a,b) => a+b;
-//result = function (a,b){
-//    return a+b;
-
 //};
-// result(suma(Number(document.getElementByID("num1").value), Number(document.getElementByID("num2".value));
+// suma(Number(document.getElementByID("num1").value), Number(document.getElementByID("num2".value));
